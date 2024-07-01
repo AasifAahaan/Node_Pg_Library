@@ -1,3 +1,4 @@
+
 import { pool } from "../config/database";
 
 export const createUsersTable = async () => {
@@ -14,3 +15,4 @@ export const createUsersTable = async () => {
     await pool.query(createTableQuery);
     console.log('✅ Table "users" created successfully');
 };
+
