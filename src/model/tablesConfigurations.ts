@@ -1,4 +1,3 @@
-import { pool } from "../config/database";
 import { createOrdersTable } from "./order";
 import { createReviewsTable } from "./review";
 import { createUsersTable } from "./user";
@@ -13,7 +12,5 @@ export const createTables = async () => {
         console.log('✅ All tables created successfully');
     } catch (err) {
         console.error('❌ Error creating tables:', err);
-    } finally {
-        await pool.end();
-    }
+    } 
 };
